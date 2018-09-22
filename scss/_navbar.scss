@@ -1,24 +1,37 @@
 #mainNav {
-  display: none;
   min-height: 56px;
-  background-color: $white;
+  background-color: $black;
   .navbar-toggler {
-    font-size: 80%;
+    width: 100%;
     padding: 0.75rem;
-    color: $primary;
-    border: 1px solid $primary;
+    color: $white;
+    text-transform: uppercase;
     &:focus {
       outline: none;
     }
   }
   .navbar-brand {
     color: $black;
+    font-weight: 700;
     padding: .9rem 0;
+    display: none;
+
+    img {
+      width: 80%;
+      margin-top: 0.1rem;
+    }
   }
+
+  .nav-link {
+    color: $white;
+    text-align: center;
+  }
+
   .navbar-nav {
+    text-transform: uppercase;
     .nav-item {
       &:hover {
-        color: fade(white, 80%);
+        color: fade(white, 100%);
         outline: none;
         background-color: transparent;
       }
@@ -33,17 +46,17 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+    background: transparent;
     .navbar-brand {
-      display: none;
-      padding: .5rem 0;
-      color: $white
+      padding: 0;
+      width: 20%;
+      display: hidden;
     }
     .nav-link {
       transition: none;
-      padding: 2rem 1.5rem;
-      color: $white;
+      padding: 1.5rem 1.5rem 1.25rem;
+      color: fade-out($white, .1);
+      border-top: 0.25rem solid transparent;
       &:hover {
         color: fade-out($white, .25);
       }
@@ -52,25 +65,25 @@
       }
     }
     &.navbar-shrink {
-      background-color: fade-out($white, 0.5);
+      background: linear-gradient(to bottom, $head 0%, #{fade-out($head, .1)} 90%,#{fade-out($head, .9)} 100%);
       .navbar-brand {
+        color: $white;
         display: block;
-        color: $black;
       }
       .nav-link {
-        color: $black;
+        color: $white;
         padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: 0.25rem solid transparent;
+        border-top: 0.25rem solid transparent;
         &:hover {
           color: $primary;
         }
         &:active {
-          color: darken($primary, 15%);
+          color: lighten($primary, 15%);
         }
         &.active {
           color: $primary;
           outline: none;
-          border-bottom: 0.25rem solid $primary;
+          border-top: 0.25rem solid $primary;
         }
       }
     }

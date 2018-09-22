@@ -1,38 +1,49 @@
 @import 'variables.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
-
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'news.scss';
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  letter-spacing: 0.0625em;
+  color:white;
 }
 
 a {
   color: $primary;
+  font-weight: 400;
   &:focus,
   &:hover {
     text-decoration: none;
-    color: darken($primary, 20%);
+    color: $white;
   }
 }
 
+h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 .bg-black {
-  background-color: $black !important;
+  background-color: $head !important;
 }
 
 .bg-primary {
   background-color: $primary !important;
 }
 
+p {
+  font-weight: 300;
+  font-size:80%;
+  color:white;
+}
 .text-primary {
   color: $primary !important;
 }
 
 footer {
-  padding: 5rem 0;
-}
-
-@media (min-width: 1200px){ 
-  .container {
-      max-width: 1140px;
-  }
+  padding: 1rem 0;
+  text-transform: uppercase;
 }

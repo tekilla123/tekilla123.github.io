@@ -1,0 +1,43 @@
+.news-section {
+  padding: 5rem 0;
+  background-color:white;
+
+  .news-text {
+    padding: 1rem;
+    @media (min-width: 992px) {
+      padding: 1rem;
+    }
+  }
+}
+
+.band-section {
+  padding: 12rem 0;
+  background-color: $black;
+
+  .lineup {
+    line-height:2rem;
+  }
+
+  .band-text {
+    padding: 1rem;
+    @media (min-width: 992px) {
+      padding: 1rem;
+    }
+  }
+
+  @media(min-width: 992px) {
+    height: 100vh;
+  }
+}
+
+.contact-section {
+  padding: 12rem 0;
+  background-color: $black;
+
+  .contact-text {
+    padding: 1rem;
+    @media (min-width: 992px) {
+      padding: 1rem;
+    }
+  }
+}
