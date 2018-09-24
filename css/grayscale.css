@@ -109,7 +109,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: radial-gradient(rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.5)), url("../img/bg-masthead.jpg");
+  background: radial-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5)), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -188,7 +188,7 @@
   background-color: #6e3332 !important;
 }
 
-.about-section {
+.livepic-section {
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgba(22, 22, 22, 0.2)), to(rgba(22, 22, 22, 0.8))), url("../img/live.jpg");
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(22, 22, 22, 0.2) 20%, rgba(22, 22, 22, 0.8) 100%), url("../img/live.jpg");
@@ -199,7 +199,7 @@
 }
 
 @media (min-width: 992px) {
-  .about-section {
+  .livepic-section {
     min-height: 25rem;
   }
 }
