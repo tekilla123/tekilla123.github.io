@@ -109,7 +109,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("../img/bg-masthead.jpg");
+  background: radial-gradient(rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.5)), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
