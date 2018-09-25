@@ -1,8 +1,8 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "title": "RudeTins",
+    "name": "rudetins",
     "version": "5.0.2",
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "Rudetins",
     "keywords": [
         "css",
         "sass",
@@ -28,6 +28,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.3.1",
         "bootstrap": "4.1.3",
+        "htmlclean": "^3.0.8",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1"
     },
@@ -37,6 +38,8 @@
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "3.10.0",
         "gulp-header": "2.0.5",
+        "gulp-htmlclean": "^2.7.22",
+        "gulp-real-favicon": "^0.3.0",
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.1",
         "gulp-uglify": "3.0.1"
