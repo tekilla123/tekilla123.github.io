@@ -34,8 +34,12 @@ h1,h2,h3,h4,h5 {
   background-color: $primary !important;
 }
 
+.important {
+  font-weight:bold;
+}
+
 p {
-  font-weight: 300;
+  font-weight: 400;
   font-size:80%;
   color:white;
 }

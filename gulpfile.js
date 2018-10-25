@@ -13,38 +13,6 @@ var fs = require('fs');
 // File where the favicon markups are stored
 var FAVICON_DATA_FILE = 'faviconData.json';
 
-// Copy third party libraries from /node_modules into /vendor
-gulp.task('vendor', function() {
-
-  // Bootstrap
-  gulp.src([
-      './node_modules/bootstrap/dist/**/*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
-    ])
-    .pipe(gulp.dest('./vendor/bootstrap'))
-
-  // Font Awesome 5
-  gulp.src([
-      './node_modules/@fortawesome/**/*'
-    ])
-    .pipe(gulp.dest('./vendor'))
-
-  // jQuery
-  gulp.src([
-      './node_modules/jquery/dist/*',
-      '!./node_modules/jquery/dist/core.js'
-    ])
-    .pipe(gulp.dest('./vendor/jquery'))
-
-  // jQuery Easing
-  gulp.src([
-      './node_modules/jquery.easing/*.js'
-    ])
-    .pipe(gulp.dest('./vendor/jquery-easing'))
-
-});
-
 // Compile SCSS
 gulp.task('css:compile', function() {
   return gulp.src('./scss/**/*.scss')
@@ -99,10 +67,6 @@ gulp.task('js:dist', ['js'], function () {
     .pipe(gulp.dest('./dist/js/'));
 });
 
-gulp.task('vendor:dist', ['vendor'], function () {
-  return gulp.src('./vendor/**/*')
-    .pipe(gulp.dest('./dist/vendor/'));
-});
 
 gulp.task('css:dist', ['css'], function () {
   return gulp.src('./css/*.min.css')
@@ -126,10 +90,10 @@ gulp.task('serve:dist', ['js'], function () {
   });
 });
 
-gulp.task('dist', ['generate-favicon', 'js:dist', 'css:dist', 'vendor:dist', 'html:dist']);
+gulp.task('dist', ['generate-favicon', 'js:dist', 'css:dist', 'html:dist']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', ['css', 'js']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -144,7 +108,7 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['dist'], function() {
   browserSync.init({
     server: {
-      baseDir: "./dist/"
+      baseDir: "./"
     }
   });
   gulp.watch('./scss/*.scss', ['css']);

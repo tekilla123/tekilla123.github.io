@@ -198,10 +198,9 @@
   }
 }
 
-.doyou-section {
+.yodbg-section {
   padding-top: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(10%, rgba(22, 22, 22, 0.2)), to(rgba(22, 22, 22, 0.8))), url("../img/do-you.jpg");
-  background: linear-gradient(to bottom, #161616, rgba(22, 22, 22, 0.2) 10%, rgba(22, 22, 22, 0.8) 100%), url("../img/do-you.jpg");
+  background-image: url("../img/yod.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -209,9 +208,22 @@
   min-height: 10rem;
 }
 
+.song-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .song-section {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
 .news-section {
   padding: 5rem 0;
-  background-color: white;
+  background-color: #ced4da;
 }
 
 .news-section .news-text {
@@ -221,31 +233,6 @@
 @media (min-width: 992px) {
   .news-section .news-text {
     padding: 1rem;
-  }
-}
-
-.band-section {
-  padding: 12rem 0;
-  background-color: #000000;
-}
-
-.band-section .lineup {
-  line-height: 2rem;
-}
-
-.band-section .band-text {
-  padding: 1rem;
-}
-
-@media (min-width: 992px) {
-  .band-section .band-text {
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .band-section {
-    height: 100vh;
   }
 }
 
@@ -293,8 +280,12 @@ h1, h2, h3, h4, h5 {
   background-color: #a34b4a !important;
 }
 
+.important {
+  font-weight: bold;
+}
+
 p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 80%;
   color: white;
 }
