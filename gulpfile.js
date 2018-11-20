@@ -81,7 +81,7 @@ gulp.task('html:dist', function () {
     gulp.src('./img/*')
     .pipe(gulp.dest('dist/img/'));
     gulp.src('./.htaccess')
-    .pipe(gulp.dest('dist/.htaccess'));
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('serve:dist', ['js'], function () {
