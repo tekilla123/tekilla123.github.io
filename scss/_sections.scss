@@ -14,7 +14,7 @@
   background-color: $gray-400;
 
   .portraits {
-    padding-top: 3rem;
+    padding-top: 1rem;
 
     img {
       width: 100%;
@@ -23,6 +23,13 @@
     p {
       padding-left:0.5rem;
     } 
+
+  }
+  .portraits > div > .row  div {
+    @media (min-width: 576px) {
+      min-height:13rem;
+    }
+
   }
 
   .news-text {
@@ -40,6 +47,9 @@
     padding-left: 1.5rem;
     padding-right:1.5rem;
   }
+  .upcominggigs {
+    padding-bottom: 1.5rem;
+  }
   .upcominggigs .row:first-of-type, .pastgigs .row:first-of-type {
     border-top:1px solid white;
   }
@@ -48,6 +58,9 @@
     padding-bottom:0.5rem;
     padding-top:0.5rem;
     border-bottom:1px solid white;
+    div.text {
+      overflow: hidden;
+    }
   }
 
 }

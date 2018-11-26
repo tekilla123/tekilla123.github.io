@@ -103,9 +103,9 @@
     <section id="news" class="news-section">
       <div class="container bg-black news-text">
         <div id="gigstable" class="row">
-            <div class="col-lg-6 upcominggigs"><h4>Nächste Konzerte</h4>
+            <div class="col-md-6 upcominggigs"><h4>Nächste Konzerte</h4>
             </div>
-            <div class="col-lg-6 pastgigs"><h4>Vergangene Konzerte</h4></div>
+            <div class="col-md-6 pastgigs"><h4>Archiv</h4></div>
         </div>
       </div>
     </section>
@@ -134,21 +134,21 @@
         <div class="container">
           <div class="portraits row no-gutters bg-black">
 
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <div class="row no-gutters">
-                <div class="col-lg-3"><img src="img/portraits/eichmann.jpg" /><p>Thomas Eichmann<br />Gesang</p></div>
-                <div class="col-lg-3"><img src="img/portraits/lori.jpg" /><p>Lorenz Moser<br />Gitarre</p></div>
-                <div class="col-lg-3"><img src="img/portraits/yvesb.jpg" /><p>Yves Blösche<br />Gitarre</p></div>
-                <div class="col-lg-3"><img src="img/portraits/fabi.jpg" /><p>Fabian Arnold<br />Bass</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/eichmann.jpg" /><p>Thomas Eichmann<br />Gesang</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/lori.jpg" /><p>Lorenz Moser<br />Gitarre</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/yvesb.jpg" /><p>Yves Blösche<br />Gitarre</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/fabi.jpg" /><p>Fabian Arnold<br />Bass</p></div>
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <div class="row no-gutters">
-                <div class="col-lg-3"><img src="img/portraits/tinu.jpg" /><p>Martin Roth<br />Schlagzeug</p></div>
-                <div class="col-lg-3"><img src="img/portraits/yvesj.jpg" /><p>Yves Jung<br />Trompete</p></div>
-                <div class="col-lg-3"><img src="img/portraits/stoney.jpg" /><p>Christian Steiner<br />Posaune</p></div>
-                <div class="col-lg-3"><img src="img/portraits/kusi.jpg" /><p>Markus Baumgartner<br />Saxophon</p></div> 
+                <div class="col-lg-3 col-6"><img src="img/portraits/tinu.jpg" /><p>Martin Roth<br />Schlagzeug</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/yvesj.jpg" /><p>Yves Jung<br />Trompete</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/stoney.jpg" /><p>Christian Steiner<br />Posaune</p></div>
+                <div class="col-lg-3 col-6"><img src="img/portraits/kusi.jpg" /><p>Markus Baumgartner<br />Saxophon</p></div> 
               </div>
             </div>  
   
@@ -232,16 +232,17 @@
     var giglist = [];
     function populate(parent, items, slice, sliceto){
       if(items.length == 0){
-        parent.append($('<div class="row"><div class="col-lg-12">Wird angekündigt...</div></div>'));
+        parent.append($('<div class="row no-gutters"><div class="col-md-12">Wird angekündigt...</div></div>'));
       }
       $(items).slice(slice, sliceto).each(function(i, elem){
-        var row = $('<div class="row">');
+        var row = $('<div class="row no-gutters">');
         parent.append(row);
-        row.append($('<div class="col-lg-3">' + elem.date + "</div>"));
+        row.append($('<div class="col-3">' + elem.date + "</div>"));
         var str = elem.location;
         if(elem.eventName != ""){
           str = elem.eventName + " / " + elem.location;
         }
+        str = '<strong>' + str + '</strong>';
         if(elem.bands != ""){
             str = str + "<br />" + elem.bands;
         }
@@ -251,23 +252,23 @@
         if(elem.links != ""){
             str = str + "<br />" + elem.links;
         }
-        row.append($('<div class="col-lg-7">' + str + "</div>"));
+        row.append($('<div class="col-6 col-lg-7 text">' + str + "</div>"));
         str = "";
         if(elem.flyer){
           str = '<a href="http://stateofflux.rudetins.ch/pictures/flyer/'+elem.flyer+'" class="imageLink"><img src="http://stateofflux.rudetins.ch/pictures/flyer/'+elem.flyerSmall+'" width="50" alt="" class="smallShadow" /></a>';
         }
-        row.append('<div class="col-lg-1">'+str+"</div>");
+        row.append('<div class="col-2">'+str+"</div>");
       });
 
       if(sliceto < 9999 && $(items).length > sliceto){
-        var link = $('<a href="#">&raquo; Alle anzeigen</a>');
+        var link = $('<a href="#">Alle anzeigen &raquo;</a>');
         console.log(link);
         link.click(function(e){
           populate(parent, items, sliceto, 9999);
           $(this).parent().remove();
           e.preventDefault();
         });
-        parent.append($('<div class="row" />').append(link));
+        parent.append($('<div class="row no-gutters" />').append(link));
       }
     }
     $(document).ready(function() {
