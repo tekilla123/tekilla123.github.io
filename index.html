@@ -262,7 +262,6 @@
 
       if(sliceto < 9999 && $(items).length > sliceto){
         var link = $('<a href="#">Alle anzeigen &raquo;</a>');
-        console.log(link);
         link.click(function(e){
           populate(parent, items, sliceto, 9999);
           $(this).parent().remove();
