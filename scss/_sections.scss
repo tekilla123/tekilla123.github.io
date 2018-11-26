@@ -13,6 +13,18 @@
   padding: 5rem 0;
   background-color: $gray-400;
 
+  .portraits {
+    padding-top: 3rem;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding-left:0.5rem;
+    } 
+  }
+
   .news-text {
     padding: 1rem;
     @media (min-width: 992px) {
@@ -21,9 +33,37 @@
   }
 }
 
+#gigstable {
+  font-size:80%;
+
+  .upcominggigs, .pastgigs {
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+  }
+  .upcominggigs .row:first-of-type, .pastgigs .row:first-of-type {
+    border-top:1px solid white;
+  }
+  
+  .row {
+    padding-bottom:0.5rem;
+    padding-top:0.5rem;
+    border-bottom:1px solid white;
+  }
+
+}
+
 .contact-section {
   padding: 12rem 0;
   background-color: $black;
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  ul li {
+    font-size: 90%;
+  }
 
   .contact-text {
     padding: 1rem;

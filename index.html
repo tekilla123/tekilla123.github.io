@@ -101,17 +101,15 @@
     </section>
 
     <section id="news" class="news-section">
-      <div class="container bg-black">
-        <div class="news-text w-100">
-          <h4>Nächste Konzerte</h4>
-          <a href="https://www.songkick.com/artists/143946" class="songkick-widget" data-theme="dark" data-detect-style="true" data-background-color="transparent"></a>
+      <div class="container bg-black news-text">
+        <div id="gigstable" class="row">
+            <div class="col-lg-6 upcominggigs"><h4>Nächste Konzerte</h4>
+            </div>
+            <div class="col-lg-6 pastgigs"><h4>Vergangene Konzerte</h4></div>
         </div>
       </div>
     </section>
-<!--
-    <section id="yodbg" class="yodbg-section">
-    </section>
--->
+
     <section id="band" class="news-section">
       <div class="container">
         <div class="row justify-content-center no-gutters">
@@ -119,7 +117,6 @@
               <div class="bg-black h-100">
                 <div class="d-flex h-100">
                   <div class="news-text w-100">
-                    <h4>Bio</h4>
                     <p>
                       Das Gefühl, dass sich die Welt immer schneller dreht, verstärkt sich. Unsere Zukunft verspricht aufregend zu werden und trotzdem kann niemand die Frage beantworten, wohin die Reise führt. Die Punkrocker von Rude Tins stellen sich den zeitgenössischen Fragen und setzen sich mit dem aktuellen Weltgeschehen auseinander. Dies tun sie, ohne Pathos und leere Worthüllen, dafür mit eigenen Geschichten und der Überzeugung, dass das letzte Wort noch nicht gesprochen ist.<br /><br />
                       Ihren Ursprung haben Rude Tins im Aargau. In den letzten 10 Jahren veröffentlichte die 8 köpfige Brass-Punkrock Band drei LPs und spielte über 100 Konzerte in der Schweiz, Deutschland, Österreich und Belgien. Für ihre Live-Show wurden sie mit dem Negative White Award ausgezeichnet. Mit ihrem einzigartigen Stil überrascht die Band und trifft den Nerv der Zeit.
@@ -135,17 +132,26 @@
         </div>
     
         <div class="container">
-          <div class="news-text bg-black"><h4>Band</h4></div>
-          <div class="row no-gutters">
-            <div class="col-lg-3 bg-black news-text ">Thomas Eichmann, Gesang</div>
-            <div class="col-lg-3 bg-black news-text ">Lorenz Moser, Gitarre</div>
-            <div class="col-lg-3 bg-black news-text ">Yves Blösche, Gitarre</div>
-            <div class="col-lg-3 bg-black news-text ">Fabian Arnold, Bass</div>
-            <div class="col-lg-3 bg-black news-text ">Martin Roth, Schlagzeug</div>
-            <div class="col-lg-3 bg-black news-text ">Yves Jung, Trompete</div>
-            <div class="col-lg-3 bg-black news-text ">Christian Steiner, Posaune</div>
-            <div class="col-lg-3 bg-black news-text ">Markus Baumgartner, Saxophon</div>        
-          </div>
+          <div class="portraits row no-gutters bg-black">
+
+            <div class="col-lg-6">
+              <div class="row no-gutters">
+                <div class="col-lg-3"><img src="img/portraits/eichmann.jpg" /><p>Thomas Eichmann<br />Gesang</p></div>
+                <div class="col-lg-3"><img src="img/portraits/lori.jpg" /><p>Lorenz Moser<br />Gitarre</p></div>
+                <div class="col-lg-3"><img src="img/portraits/yvesb.jpg" /><p>Yves Blösche<br />Gitarre</p></div>
+                <div class="col-lg-3"><img src="img/portraits/fabi.jpg" /><p>Fabian Arnold<br />Bass</p></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row no-gutters">
+                <div class="col-lg-3"><img src="img/portraits/tinu.jpg" /><p>Martin Roth<br />Schlagzeug</p></div>
+                <div class="col-lg-3"><img src="img/portraits/yvesj.jpg" /><p>Yves Jung<br />Trompete</p></div>
+                <div class="col-lg-3"><img src="img/portraits/stoney.jpg" /><p>Christian Steiner<br />Posaune</p></div>
+                <div class="col-lg-3"><img src="img/portraits/kusi.jpg" /><p>Markus Baumgartner<br />Saxophon</p></div> 
+              </div>
+            </div>  
+  
         </div>
       </div>
     </section>
@@ -172,7 +178,37 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <div class="bg-black h-100">
+                    <div class="d-flex h-100">
+                      <div class="contact-text w-100">
+                        <div class="h-50">
+                          <h4>Downloads</h4>
+                          <ul>
+                            <li>Logo <ul>
+                              <li><a href="https://www.dropbox.com/s/5wyagaitz5sd8dg/rudetins-logo.eps?dl=1" target="_blank">EPS</a></li>
+                              <li><a href="https://www.dropbox.com/s/a8fauun7ncvnkc4/rudetins-logo-white.png?dl=1" target="_blank">PNG (weiss)</a></li>
+                              <li><a href="https://www.dropbox.com/s/puwwxva5i0i5bxj/rudetins-logo-black.png?dl=1" target="_blank">PNG (schwarz)</a></li>
+                              </ul>
+                            </li>
+                            <li>Biographie<ul>
+                              <li><a href="https://www.dropbox.com/s/pa3xwdm5swjy9kr/rudetins-bio.pdf?dl=1" target="_blank">PNG (weiss)</a></li>
+                            </ul>
+                            </li>
+                            <li>Bandfoto
+                                <ul>
+                                    <li><a href="https://www.dropbox.com/s/jon067wgmq46bmp/rudetins-foto.jpg?dl=1" target="_blank">JPEG</a></li>
+                                </ul>
+                            </li>
+                            <li>Tech Rider<ul>
+                                <li><a href="https://www.dropbox.com/s/r04ipwyrbddnrva/rudetins-stagerider.pdf?dl=1" target="_blank">PDF</a></li>
+                            </ul></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
@@ -192,6 +228,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/rudetins.min.js"></script>
     <script src="//widget.songkick.com/143946/widget.js"></script>
+    <script>
+    var giglist = [];
+    function populate(parent, items, slice, sliceto){
+      if(items.length == 0){
+        parent.append($('<div class="row"><div class="col-lg-12">Wird angekündigt...</div></div>'));
+      }
+      $(items).slice(slice, sliceto).each(function(i, elem){
+        var row = $('<div class="row">');
+        parent.append(row);
+        row.append($('<div class="col-lg-3">' + elem.date + "</div>"));
+        var str = elem.location;
+        if(elem.eventName != ""){
+          str = elem.eventName + " / " + elem.location;
+        }
+        if(elem.bands != ""){
+            str = str + "<br />" + elem.bands;
+        }
+        if(elem.comment != ""){
+            str = str + "<br />" + elem.comment;
+        }
+        if(elem.links != ""){
+            str = str + "<br />" + elem.links;
+        }
+        row.append($('<div class="col-lg-7">' + str + "</div>"));
+        str = "";
+        if(elem.flyer){
+          str = '<a href="http://stateofflux.rudetins.ch/pictures/flyer/'+elem.flyer+'" class="imageLink"><img src="http://stateofflux.rudetins.ch/pictures/flyer/'+elem.flyerSmall+'" width="50" alt="" class="smallShadow" /></a>';
+        }
+        row.append('<div class="col-lg-1">'+str+"</div>");
+      });
+
+      if(sliceto < 9999 && $(items).length > sliceto){
+        var link = $('<a href="#">&raquo; Alle anzeigen</a>');
+        console.log(link);
+        link.click(function(e){
+          populate(parent, items, sliceto, 9999);
+          $(this).parent().remove();
+          e.preventDefault();
+        });
+        parent.append($('<div class="row" />').append(link));
+      }
+    }
+    $(document).ready(function() {
+      $.get('http://stateofflux.rudetins.ch/de/on-tour/json', function(result){
+        giglist = result;
+        populate($("#gigstable .pastgigs"), result['past'], 0, 10);
+        populate($("#gigstable .upcominggigs"), $(result['future']), 0, 10);
+
+
+    
+      });
+    });
+    </script>
   </body>
 
 </html>

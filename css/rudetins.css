@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #mainNav {
   min-height: 56px;
   background-color: #161616;
@@ -226,6 +227,18 @@
   background-color: #ced4da;
 }
 
+.news-section .portraits {
+  padding-top: 3rem;
+}
+
+.news-section .portraits img  {
+  width: 100%;
+}
+
+.news-section .portraits p {
+  padding-left: 0.5rem;
+}
+
 .news-section .news-text {
   padding: 1rem;
 }
@@ -236,9 +249,37 @@
   }
 }
 
+#gigstable {
+  font-size: 80%;
+}
+
+#gigstable .upcominggigs, #gigstable .pastgigs {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#gigstable .upcominggigs .row:first-of-type, #gigstable .pastgigs .row:first-of-type {
+  border-top: 1px solid white;
+}
+
+#gigstable .row {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
 .contact-section {
   padding: 12rem 0;
   background-color: #161616;
+}
+
+.contact-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-section ul li {
+  font-size: 90%;
 }
 
 .contact-section .contact-text {
@@ -258,7 +299,7 @@ body {
 }
 
 a {
-  color: #a34b4a;
+  color: white;
   font-weight: 400;
 }
 
