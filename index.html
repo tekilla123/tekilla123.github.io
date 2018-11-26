@@ -272,7 +272,7 @@
       }
     }
     $(document).ready(function() {
-      $.get('http://stateofflux.rudetins.ch/de/on-tour/json', function(result){
+      $.get('https://stateofflux.rudetins.ch/de/on-tour/json', function(result){
         giglist = result;
         populate($("#gigstable .pastgigs"), result['past'], 0, 10);
         populate($("#gigstable .upcominggigs"), $(result['future']), 0, 10);
