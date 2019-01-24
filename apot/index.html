@@ -7,8 +7,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Rude Tins - A Picture of Tomorrow</title>
     <style>
+
+    @media (min-width: 500px) {
+      .container {
+        width: 400px;
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .headcontainer {
+      background: linear-gradient(rgba(0,0,0,0.2), rgba(51,51,51,0.4),  rgba(51,51,51,1)), url('live.jpg');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      height: 50vw;
+    }
+
     h1 {
-      margin: 2.5rem auto 2.5rem auto;
+      margin: 0 auto 0 auto;
+      padding: 4rem 0 2.5rem 0;
       width: 20rem;
     }
     h1 img {
@@ -71,79 +92,81 @@
     </style>
   </head>
   <body>
+    <div class="headcontainer">
+        <h1><img src="logo.png" alt="Rude Tins - A Picture of Tomorrow"></h1>
+    </div>
+    <div class="container">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.2';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <h1><img src="logo.png" alt="Rude Tins - A Picture of Tomorrow"></h1>
-
-    <h2><i class="fas fa-fire"></i>&nbsp;&nbsp;&nbsp;Follow us for News and Releases!</h2>
-    <div class="container socialsection">
-      <div class="row">
-        <div class="col-6">
-            <div class="fb-page" data-href="https://www.facebook.com/rudetins/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/rudetins/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rudetins/">Rude Tins</a></blockquote></div>
+      <h2><i class="fas fa-fire"></i>&nbsp;&nbsp;&nbsp;Follow us for News and Releases!</h2>
+      <div class="socialsection">
+        <div class="row no-gutters">
+          <div class="col-6">
+              <div class="fb-page" data-href="https://www.facebook.com/rudetins/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/rudetins/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rudetins/">Rude Tins</a></blockquote></div>
+          </div>
+          <div class="col-6">
+              <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:20XsDMN8RhkHSmnH2DrgAz&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+          </div>
         </div>
-        <div class="col-6">
-            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:20XsDMN8RhkHSmnH2DrgAz&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+        <div class="row no-gutters">
+          <div class="col-6" style="padding-left:0.1rem">
+              <a href="https://www.instagram.com/rudetins/" target="_blank"><img src="insta.png" style="width:80%" alt="Follow us on Instagram"/></a>
+          </div>
+          <div class="col-6">
+            <script src="https://apis.google.com/js/platform.js"></script>
+            <div class="g-ytsubscribe" data-channelid="UCbrACoC56TvUUSoRpd9MNNA" data-layout="full" data-count="hidden"></div>
+          </div>
         </div>
+        <div class="row no-gutters">
+          <div class="col-6" style="padding-left:0.1rem" >
+            <a href="https://twitter.com/rudetins?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rudetins</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="col-6" >
+            <a href="https://soundcloud.com/rudetins" target="_blank" class="mx-2">
+              <i class="fab fa-soundcloud" style="font-size:2rem; color: #f50"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-6" style="padding-left:0.1rem">
-            <a href="https://www.instagram.com/rudetins/" target="_blank"><img src="insta.png" style="width:80%" alt="Follow us on Instagram"/></a>
-        </div>
-        <div class="col-6">
-          <script src="https://apis.google.com/js/platform.js"></script>
-          <div class="g-ytsubscribe" data-channelid="UCbrACoC56TvUUSoRpd9MNNA" data-layout="full" data-count="hidden"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6" style="padding-left:0.1rem" >
-          <a href="https://twitter.com/rudetins?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rudetins</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <div class="col-6" >
-          <a href="https://soundcloud.com/rudetins" target="_blank" class="mx-2">
-            <i class="fab fa-soundcloud" style="font-size:2rem; color: #f50"></i>
-          </a>
-        </div>
+      
+      <h3>A Picture of Tomorrow</h3>
+
+      <h2 class="video "><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;To a Better Place</h2>
+      <div class="action">Coming Soon - Follow us!</div>
+      <div class="video empty">
       </div>
 
-    </div>
-    
-    <h3>A Picture of Tomorrow</h3>
-    <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Bitter End</h2>
-    <div class="action">Coming Soon - Follow us!</div>
-    <div class="video empty">
-    </div>
+      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Bitter End</h2>
+      <div class="action">Coming Soon - Follow us!</div>
+      <div class="video empty">
+      </div>
 
-        
-    <h2 class="video "><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;To a Better Place</h2>
-    <div class="action">Coming Soon - Follow us!</div>
-    <div class="video empty">
-    </div>
+      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Fire and Forget</h2>
+      <div class="action">1. Febraury 2019</div>
+      <div class="video">
+          <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
+      </div>
 
-    <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Fire and Forget</h2>
-    <div class="action">1. Febraury 2019</div>
-    <div class="video">
-        <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
-    </div>
-
-    <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Year of Disaster</h2>
-    <div class="action">26. October 2018</div>
-    <div class="video">
-        <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
-    </div>
+      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Year of Disaster</h2>
+      <div class="action">26. October 2018</div>
+      <div class="video">
+          <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
+      </div>
 
 
-    <h3>More Rude Tins Songs</h3>
+      <h3>More Rude Tins Songs</h3>
 
-    <div class="spotify">
-        <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" style="width:100%; height:56vw" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <div class="spotify">
+          <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" style="width:100%; height:56vw" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
