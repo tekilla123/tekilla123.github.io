@@ -118,6 +118,14 @@ gulp.task('dev', ['dist'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
+gulp.task('dev-apot', function(){
+  browserSync.init({
+    server: {
+      baseDir: "./apot"
+    }
+  });
+  gulp.watch('./apot/*.html', browserSync.reload);
+});
 
 gulp.task('generate-favicon', function(done) {
 	realFavicon.generateFavicon({
