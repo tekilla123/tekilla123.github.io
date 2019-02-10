@@ -6,11 +6,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Rude Tins - A Picture of Tomorrow</title>
-    <style>
 
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+    <style>
     @media (min-width: 500px) {
       .container {
         width: 400px;
+      }
+      .headcontainer {
+        height: 20rem !important;
       }
     }
 
@@ -43,11 +54,10 @@
     }
 
     h3 {
-      margin-top: 1rem;
       font-size: 1.1rem;
       text-align: center;
       font-weight: 700;
-      margin-bottom: 2rem;
+      margin: 3rem 0 3rem 0;
     }
 
     body {
@@ -57,13 +67,34 @@
       text-transform: uppercase;
     }
 
+    a, a:link, a:hover, a:visited {
+      color:white;
+      text-decoration: none;
+    }
+
     .socialsection {
       margin: 0 auto 4rem auto;
     }
     
     .socialsection .row div {
       padding:0.1rem;
-      background-color:white;
+      background-color: white;
+    }
+
+    .contact {
+      margin-bottom: 3rem;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .contact .social a {
+      height: 2.5rem;
+      width: 2.5rem;
+      background: #555;
+      border-radius: 100%;
+      display: inline-block;
+      line-height: 2.5rem;
+      font-size: 1rem;
     }
 
     div.video {
@@ -72,9 +103,6 @@
       position:relative;
     }
 
-    div.empty {
-      margin-bottom: 1rem;
-    }
 
     h2.video {
       display:flex;
@@ -89,11 +117,21 @@
       line-height: 0.8rem;
     }
 
+    .spotify iframe {
+      width:100%;
+      height:30rem;
+    }
     </style>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-126397028-1');
+    </script>
   </head>
   <body>
     <div class="headcontainer">
-        <h1><img src="logo.png" alt="Rude Tins - A Picture of Tomorrow"></h1>
+        <h1><a href="http://www.rudetins.ch"><img src="logo.png" alt="Rude Tins - A Picture of Tomorrow"></a></h1>
     </div>
     <div class="container">
       <div id="fb-root"></div>
@@ -116,14 +154,15 @@
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-6" style="padding-left:0.1rem">
-              <a href="https://www.instagram.com/rudetins/" target="_blank"><img src="insta.png" style="width:80%" alt="Follow us on Instagram"/></a>
+          <div class="col-6" style="padding-left:10px">
+              <a href="https://www.instagram.com/rudetins/" target="_blank"><img src="insta.png" style="width:60%" alt="Follow us on Instagram"/></a>
           </div>
           <div class="col-6">
             <script src="https://apis.google.com/js/platform.js"></script>
             <div class="g-ytsubscribe" data-channelid="UCbrACoC56TvUUSoRpd9MNNA" data-layout="full" data-count="hidden"></div>
           </div>
         </div>
+        <!--
         <div class="row no-gutters">
           <div class="col-6" style="padding-left:0.1rem" >
             <a href="https://twitter.com/rudetins?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rudetins</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -134,19 +173,17 @@
             </a>
           </div>
         </div>
+        -->
 
       </div>
       
+      <h2><i class="fas fa-headphones"></i>&nbsp;&nbsp;&nbsp;Check out our upcoming EP!</h2>
       <h3>A Picture of Tomorrow</h3>
 
-      <h2 class="video "><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;To a Better Place</h2>
-      <div class="action">Coming Soon - Follow us!</div>
-      <div class="video empty">
-      </div>
-
-      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Bitter End</h2>
-      <div class="action">Coming Soon - Follow us!</div>
-      <div class="video empty">
+      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Year of Disaster</h2>
+      <div class="action">26. October 2018</div>
+      <div class="video">
+          <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
       </div>
 
       <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Fire and Forget</h2>
@@ -155,17 +192,44 @@
           <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/fireandforget" frameborder="0" allowfullscreen="true"></iframe></div></div>
       </div>
 
-      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Year of Disaster</h2>
-      <div class="action">26. October 2018</div>
-      <div class="video">
-          <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
+      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Bitter End</h2>
+      <div class="action">Coming Soon - Follow us!</div>
+      <div class="video empty">
       </div>
 
+      <h2 class="video "><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;To a Better Place</h2>
+      <div class="action">Coming Soon - Follow us!</div>
+      <div class="video empty">
+      </div>
+      
+      <h2><i class="fas fa-globe"></i>&nbsp;&nbsp;&nbsp;Contact and Booking</h2>
+      <div class="contact">
+          <i class="fas fa-envelope"></i>&nbsp;&nbsp;<a href="javascript:location='mailto:'+'gyves'+ /* JAVASCRIPT-VERSCHLEIERUNG - EINFACH KLICKEN (JAVASCRIPT BEN&Ouml;TIGT)*/ '@ru' + 'detins.ch'">Yves Blösche - gyves<span style="display:none;">ENTFERNE-DIESEN-TEXT</span>@<span style="display:inline;">rudetins</span>.ch</a>
+          <br />
+          <br />
+          <div class="social">
+              <a href="https://www.facebook.com/rudetins" target="_blank" class="mx-2">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://instagram.com/rudetins" target="_blank" class="mx-2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCbrACoC56TvUUSoRpd9MNNA" target="_blank" class="mx-2">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://open.spotify.com/artist/20XsDMN8RhkHSmnH2DrgAz" target="_blank" class="mx-2">
+                <i class="fab fa-spotify"></i>
+              </a>
+              <a href="https://soundcloud.com/rudetins" target="_blank" class="mx-2">
+                <i class="fab fa-soundcloud"></i>
+              </a>
+            </div>
+      </div>
 
-      <h3>More Rude Tins Songs</h3>
+      <h2><i class="fab fa-spotify"></i>&nbsp;&nbsp;&nbsp;More from the Rude Tins...</h2>
 
       <div class="spotify">
-          <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" style="width:100%; height:56vw" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </div>
 
