@@ -83,7 +83,7 @@
     }
 
     .socialsection {
-      margin: 0 auto 4rem auto;
+      margin: 0 auto;
     }
     
     .socialsection .row div {
@@ -108,30 +108,36 @@
     }
 
     div.video {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
       clear: both;
       position:relative;
     }
 
-
-    h2.video {
-      display:flex;
-      float:left;
-      margin-top: 0;
-    }
-    div.action {
-      display: flex;
-      float: right;
-      font-size: 0.5rem;
-      font-weight: normal;
-      padding: 0.3rem 0.5rem 0 0;
-      line-height: 0.8rem;
+    .song {
+      padding-bottom: 0.5rem;
+    } 
+    .song .social a {
+      margin-right: 0.5rem;
     }
 
     .spotify iframe {
       width:100%;
       height:30rem;
     }
+
+    hr {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      border-color: white;
+    }
+    div.ep {
+      margin-right: -5px;
+      margin-left: -5px;
+    }
+    div.ep div{
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    } 
     </style>
   </head>
   <body>
@@ -181,41 +187,133 @@
         -->
 
       </div>
-      
-      <h2><i class="fas fa-headphones"></i>&nbsp;&nbsp;&nbsp;Check out our upcoming EP!</h2>
-      <h3>A Picture of Tomorrow</h3>
+      <hr />
+      <h2><i class="fas fa-headphones"></i>&nbsp;&nbsp;&nbsp;singles from <i>A Picture of Tomorrow!</i></h2>
+      <div class="row no-gutters ep">
+        <div class="col-3">
+          <a class="js-scroll-trigger" href="#yod">
+            <img src="yod.jpg" style="width:100%" alt="Year of Disaster" />
+          </a>
+        </div>
+        <div class="col-3">
+          <a class="js-scroll-trigger" href="#ff">
+            <img src="ff.jpg" style="width:100%" alt="Fire and Forget" />
+          </a>
+        </div>
+        <div class="col-3">
+            <a class="js-scroll-trigger" href="#bitter">
+                <img src="bitter.jpg" style="width:100%" alt="Bitter End" />
+              </a>
+        </div>
+        <div class="col-3">
+            <a class="js-scroll-trigger" href="#better">
+                <img src="better.jpg" style="width:100%" alt="To a Better Place" />
+              </a>
+        </div>
+      </div>
 
-      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Year of Disaster</h2>
-      <div class="action">26. October 2018</div>
+      <hr />
+
+      <div id="yod" class="row song">
+          <div class="col-3">
+              <img src="yod.jpg" style="width:100%" alt="Year of Disaster" />
+          </div>
+          <div class="col-9">
+              Year of Disaster <br />
+              <span style="font-size:70%">26. October 2018</span>
+          </div>
+      </div>
       <div class="video">
           <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/yearofdisaster" frameborder="0" allowfullscreen="true"></iframe></div></div>
       </div>
 
-      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Fire and Forget</h2>
-      <div class="action">1. Febraury 2019</div>
+      <div id="ff" class="row song">
+          <div class="col-3">
+              <img src="ff.jpg" style="width:100%" alt="Fire and Forget" />
+          </div>
+          <div class="col-9">
+              Fire and Forget <br />
+              <span style="font-size:70%">1. February 2018</span>
+          </div>
+      </div>
       <div class="video">
           <div style="max-width:100%;"><div style="position: relative; padding-bottom: calc(56.25% + 88px); height: 0;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://song.link/embed?url=https://song.link/fireandforget" frameborder="0" allowfullscreen="true"></iframe></div></div>
       </div>
 
-      <h2 class="video"><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;Bitter End</h2>
-      <div class="action">Coming Soon - Follow us!</div>
-      <div class="video empty">
+
+      <div id="bitter" class="row song" style="margin-bottom:4rem;">
+          <div class="col-3">
+              <img src="bitter.jpg" style="width:100%" alt="Bitter End" />
+          </div>
+          <div class="col-9">
+              Bitter End <br />
+              <span style="font-size:70%">Coming soon - Don't miss it!</span>
+              <div class="social">
+                  <a href="https://www.facebook.com/rudetins" target="_blank" >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://instagram.com/rudetins" target="_blank" >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCbrACoC56TvUUSoRpd9MNNA" target="_blank"">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://open.spotify.com/artist/20XsDMN8RhkHSmnH2DrgAz" target="_blank" >
+                    <i class="fab fa-spotify"></i>
+                  </a>
+                  <a href="https://soundcloud.com/rudetins" target="_blank">
+                    <i class="fab fa-soundcloud"></i>
+                  </a>
+              </div>
+          </div>
       </div>
 
-      <h2 class="video "><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;To a Better Place</h2>
-      <div class="action">Coming Soon - Follow us!</div>
-      <div class="video empty">
-      </div>
 
+      <div id="better" class="row song">
+          <div class="col-3">
+              <img src="better.jpg" style="width:100%" alt="To a Better Place" />
+          </div>
+          <div class="col-9">
+              To A Better place <br />
+              <span style="font-size:70%">Coming soon - Don't miss it!</span>
+              <div class="social">
+                  <a href="https://www.facebook.com/rudetins" target="_blank" >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://instagram.com/rudetins" target="_blank" >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCbrACoC56TvUUSoRpd9MNNA" target="_blank"">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://open.spotify.com/artist/20XsDMN8RhkHSmnH2DrgAz" target="_blank" >
+                    <i class="fab fa-spotify"></i>
+                  </a>
+                  <a href="https://soundcloud.com/rudetins" target="_blank">
+                    <i class="fab fa-soundcloud"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <hr />
       <h2><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Shop</h2>
-      <div style="margin-bottom:2rem">
+      <div class="shop">
         For Music, T-shirts, hoodies, lighters and more check out
         <a href="https://rudetins.bigcartel.com/" target="_blank" style="text-decoration:underline">OUR SHOP!</a>
       </div>
-      
+    
+      <hr />
+      <h2><i class="fab fa-spotify"></i>&nbsp;&nbsp;&nbsp;More from the Rude Tins...</h2>
+
+      <div class="spotify">
+          <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <hr />
+
       <h2><i class="fas fa-globe"></i>&nbsp;&nbsp;&nbsp;Contact and Booking</h2>
       <div class="contact">
-          <i class="fas fa-envelope"></i>&nbsp;&nbsp;<a href="javascript:location='mailto:'+'gyves'+ /* JAVASCRIPT-VERSCHLEIERUNG - EINFACH KLICKEN (JAVASCRIPT BEN&Ouml;TIGT)*/ '@ru' + 'detins.ch'">Yves Blösche - gyves<span style="display:none;">ENTFERNE-DIESEN-TEXT</span>@<span style="display:inline;">rudetins</span>.ch</a>
+         <a href="javascript:location='mailto:'+'gyves'+ /* JAVASCRIPT-VERSCHLEIERUNG - EINFACH KLICKEN (JAVASCRIPT BEN&Ouml;TIGT)*/ '@ru' + 'detins.ch'">Yves Blösche - gyves<span style="display:none;">ENTFERNE-DIESEN-TEXT</span>@<span style="display:inline;">rudetins</span>.ch</a>
           <br />
           <br />
           <div class="social">
@@ -234,20 +332,33 @@
               <a href="https://soundcloud.com/rudetins" target="_blank" class="mx-2">
                 <i class="fab fa-soundcloud"></i>
               </a>
-            </div>
-      </div>
-
-      <h2><i class="fab fa-spotify"></i>&nbsp;&nbsp;&nbsp;More from the Rude Tins...</h2>
-
-      <div class="spotify">
-          <iframe src="https://open.spotify.com/embed/user/rudetins/playlist/2ZSTD1ZPFwM1IwR5SeIcys" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            console.log(target)
+            $('html, body').animate({
+              scrollTop: (target.offset().top - 20)
+            }, 1000, "easeInOutExpo");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
   </body>
 </html>
